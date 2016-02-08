@@ -4,3 +4,7 @@ Title : <%= @article.title %>
 <p>
 Description : <%= @article.description %>
 </p>
+<p>
+  <%= link_to 'Edit article', edit_article_path(@article.id) %>
+  <%= link_to 'Articles list', articles_path %>    
+</p>
